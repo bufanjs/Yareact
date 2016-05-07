@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Hello from 'mycommon/hello'
 import './app.less';
 
 class App extends React.Component {
@@ -9,7 +10,8 @@ class App extends React.Component {
     render() {
         return (
             <div className="index-app">
-                <h1>Hello world!</h1>
+                <h1>sss ss</h1>
+                <Hello/>
             </div>
         );
     }
