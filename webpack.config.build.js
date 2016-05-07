@@ -7,11 +7,11 @@ var BUILD_PATH = path.resolve(ROOT_PATH, 'dist');
 
 module.exports = {
     entry: {
-        app: path.resolve(SRC_PATH,'app.js')
+        "main": path.resolve(SRC_PATH,'app.js')
     },
     output: {
         path: BUILD_PATH,
-        filename: 'main.js'
+        filename: '[name].js'
     },
     resolve: {
         alias: {

@@ -12,20 +12,20 @@ var server = new WebpackDevServer(compiler, {
     lazy: false,
     historyApiFallback: true,
     headers: {
-      "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "*"
     },
     stats: {
-      colors: true
+        colors: true
     },
     proxy: {
-      "/api/*": "http://localhost:3000/api",
-      "/*.*": "http://localhost:3000"
+        "/api/*": "http://localhost:3000/api",
+        "/*.*": "http://localhost:3000"
     }
 });
 server.use(require('webpack-hot-middleware')(compiler));
-server.listen(4000, 'localhost', function (err) {
-  if (err) {
-      console.log(err);
-  }
-  console.log('Listening at localhost:4000');
+server.listen(8000, 'localhost', function(err) {
+    if (err) {
+        console.log(err);
+    }
+    console.log('Listening at localhost:8000');
 });
