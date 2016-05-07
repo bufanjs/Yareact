@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Hello from 'mycommon/hello'
-import './app.less';
+import styles from './app.less';
 
 class App extends React.Component {
     constructor() {
@@ -9,8 +9,8 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div className="index-app">
-                <h1>sss ss</h1>
+            <div className={styles.main}>
+                <h1>hello</h1>
                 <Hello/>
             </div>
         );

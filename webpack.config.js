@@ -32,9 +32,9 @@ module.exports = {
                 include: SRC_PATH
             }, {
                 test: /\.less$/,
-                loaders: ['style', 'css', 'less'],
+                loaders: ['style', 'css?modules&localIdentName=[name]__[local]__[hash:base64:5]', 'less'],
                 include: SRC_PATH
-            }, {
+            },  {
                 test: /\.(png|jpg)$/,
                 loader: 'url?limit=8096'
             }, {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './hello.less';
+import styles from './hello.less';
 
 export default class hello extends React.Component {
     constructor(props) {
@@ -7,7 +7,7 @@ export default class hello extends React.Component {
     }
     render() {
         return (
-            <div className="hello">aaa component</div>
+            <div className={styles.hello}>aaa component</div>
         );
     }
 }
