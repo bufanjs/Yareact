@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --progress --profile --colors --hot"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "bufan",
+  "license": "MIT",
   "devDependencies": {
-    "eslint-plugin-react": "^5.0.1",
-    "gulp": "^3.9.1"
+    "eslint-plugin-react": "^5.0.1"
   }
 }
