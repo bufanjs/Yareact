@@ -7,7 +7,7 @@ var BUILD_PATH = path.resolve(ROOT_PATH, 'dist');
 
 module.exports = {
     entry: {
-        app: path.resolve(SRC_PATH,'app.jsx')
+        app: path.resolve(SRC_PATH,'app.js')
     },
     output: {
         path: BUILD_PATH,
@@ -29,7 +29,8 @@ module.exports = {
     module: {
         loaders: [{
                 test: /\.css$/,
-                loader: ['style','css']
+                loader: ['style','css'],
+                include: SRC_PATH
             }, {
                 test: /\.less$/,
                 loaders: ['style', 'css', 'less'],
@@ -42,7 +43,7 @@ module.exports = {
                 loader: 'babel',
                 include: SRC_PATH,
                 query: {
-                    presets: ['es2015']
+                    presets: ['es2015','react']
                 }
             }
 

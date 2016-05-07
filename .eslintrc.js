@@ -22,7 +22,7 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "no-undef": 2,
-        "no-unused-vars": 2
+        // "no-undef": 2,
+        // "no-unused-vars": 2
     }
 };
